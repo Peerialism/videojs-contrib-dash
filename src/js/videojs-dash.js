@@ -69,7 +69,9 @@
     }
 
     // Save the context after the first initialization for subsequent instances
-    Html5DashJS.context_ = Html5DashJS.context_ || new Dash.di.DashContext();
+    //Html5DashJS.context_ = Html5DashJS.context_ || new Dash.di.DashContext();
+
+    Html5DashJS.context_ = Html5DashJS.context_ || new HiveDash.gen.HiveContext();
 
     // But make a fresh MediaPlayer each time the sourceHandler is used
     this.mediaPlayer_ = new MediaPlayer(Html5DashJS.context_);

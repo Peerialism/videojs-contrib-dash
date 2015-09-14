@@ -66,7 +66,7 @@ module.exports = function(grunt) {
       }
     },
     qunit: {
-      all: ['test/index.html']
+      all: ['test/index-without-hive.html']
     },
     videojs_automation: {
       test: ['test/functional/spec.js']
